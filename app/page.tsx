@@ -9,9 +9,13 @@ export default function Home() {
         Find hidden AI overspending in minutes. Audit your AI tool stack and discover smarter savings instantly.
       </p>
 
-      <button className="bg-white text-black px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition">
-        Start Free Audit
-      </button>
+        <a
+        href="/audit"
+        className="bg-white text-black px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition"
+>
+       Start Free Audit
+</a>
+
 
       <div className="grid md:grid-cols-3 gap-6 mt-20 w-full max-w-6xl">
         <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-800">
