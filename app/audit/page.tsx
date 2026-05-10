@@ -28,7 +28,7 @@ export default function AuditPage() {
       "auditForm",
       JSON.stringify({ tool, plan, spend, seats, teamSize, useCase })
     );
-    alert("Saved!");
+    window.location.href = "/results"
   };
 
   return (
@@ -36,12 +36,12 @@ export default function AuditPage() {
       <h1 className="text-4xl font-bold mb-8">AI Spend Audit</h1>
 
       <div className="space-y-4 max-w-md">
-        <input className="w-full p-3 text-black rounded" placeholder="Tool" value={tool} onChange={(e)=>setTool(e.target.value)} />
-        <input className="w-full p-3 text-black rounded" placeholder="Plan" value={plan} onChange={(e)=>setPlan(e.target.value)} />
-        <input className="w-full p-3 text-black rounded" placeholder="Monthly Spend" value={spend} onChange={(e)=>setSpend(e.target.value)} />
-        <input className="w-full p-3 text-black rounded" placeholder="Seats" value={seats} onChange={(e)=>setSeats(e.target.value)} />
-        <input className="w-full p-3 text-black rounded" placeholder="Team Size" value={teamSize} onChange={(e)=>setTeamSize(e.target.value)} />
-        <input className="w-full p-3 text-black rounded" placeholder="Use Case" value={useCase} onChange={(e)=>setUseCase(e.target.value)} />
+        <input className="w-full p-3 rounded big-white text-black caret-black" placeholder="Tool" value={tool} onChange={(e)=>setTool(e.target.value)} />
+        <input className="w-full p-3 rounded big-white text-black caret-black" placeholder="Plan" value={plan} onChange={(e)=>setPlan(e.target.value)} />
+        <input className="w-full p-3 rounded big-white text-black caret-black" placeholder="Monthly Spend" value={spend} onChange={(e)=>setSpend(e.target.value)} />
+        <input className="w-full p-3 rounded big-white text-black caret-black" placeholder="Seats" value={seats} onChange={(e)=>setSeats(e.target.value)} />
+        <input className="w-full p-3 rounded big-white text-black caret-black" placeholder="Team Size" value={teamSize} onChange={(e)=>setTeamSize(e.target.value)} />
+        <input className="w-full p-3 rounded big-white text-black caret-black" placeholder="Use Case" value={useCase} onChange={(e)=>setUseCase(e.target.value)} />
 
         <button
           onClick={saveData}
