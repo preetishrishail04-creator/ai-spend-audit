@@ -1,18 +1,21 @@
-## Day 1 - 2026-05-10
+## Day 1 - 2026-05-11
 
-Hours worked: 5
+**Hours worked:** 4
 
-What I did:
-- Set up Next.js project
-- Built landing page
+**What I did:**
+- Setup Next.js + TypeScript + Tailwind
+- Created landing page
 - Built audit form page
-- Built results page
+- Added results page
 - Connected GitHub and pushed code
 
-What I learned:
-- Next.js routing
-- Git push and commit
+**What I learned:**
+- Next.js app routing
+- Git/GitHub workflow
+- localStorage basics
 
-Plan for tomorrow:
-- Improve UI
-- Add more features
+**Blockers / what I'm stuck on:**
+- Input styling issue fixed with text-black
+
+**Plan for tomorrow:**
+- Add real pricing logic and better results page
