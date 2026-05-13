@@ -40,11 +40,49 @@ export default function AuditPage() {
       <h1 className="text-4xl font-bold mb-8">AI Spend Audit</h1>
 
       <div className="space-y-4 max-w-md">
-        <input className="w-full p-3 rounded big-white text-black caret-black" placeholder="Tool" value={tool} onChange={(e)=>setTool(e.target.value)} />
-        <input className="w-full p-3 rounded big-white text-black caret-black" placeholder="Plan" value={plan} onChange={(e)=>setPlan(e.target.value)} />
-        <input className="w-full p-3 rounded big-white text-black caret-black" placeholder="Monthly Spend" value={spend} onChange={(e)=>setSpend(e.target.value)} />
-        <input className="w-full p-3 rounded big-white text-black caret-black" placeholder="Seats" value={seats} onChange={(e)=>setSeats(e.target.value)} />
-        <input className="w-full p-3 rounded big-white text-black caret-black" placeholder="Team Size" value={teamSize} onChange={(e)=>setTeamSize(e.target.value)} />
+        <select
+  className="w-full p-3 rounded text-black"
+  value={tool}
+  onChange={(e) => setTool(e.target.value)}
+>
+  <option value="">Select Tool</option>
+  <option value="ChatGPT">ChatGPT</option>
+  <option value="Claude">Claude</option>
+  <option value="Cursor">Cursor</option>
+  <option value="GitHub Copilot">GitHub Copilot</option>
+</select>
+        <select
+  className="w-full p-3 rounded text-black"
+  value={plan}
+  onChange={(e) => setPlan(e.target.value)}
+>
+  <option value="">Select Plan</option>
+  <option value="Free">Free</option>
+  <option value="Pro">Pro</option>
+  <option value="Team">Team</option>
+  <option value="Enterprise">Enterprise</option>
+</select>
+        <input
+  type="number"
+  className="w-full p-3 rounded big-white text-black caret-black"
+  placeholder="Monthly Spend"
+  value={spend}
+  onChange={(e) => setSpend(e.target.value)}
+/>
+        <input
+  type="number"
+  className="w-full p-3 rounded big-white text-black caret-black"
+  placeholder="Seats"
+  value={seats}
+  onChange={(e)=>setSeats(e.target.value)}
+/>
+        <input
+  type="number"
+  className="w-full p-3 rounded big-white text-black caret-black"
+  placeholder="Team Size"
+  value={teamSize}
+  onChange={(e)=>setTeamSize(e.target.value)}
+/>
         <input className="w-full p-3 rounded big-white text-black caret-black" placeholder="Use Case" value={useCase} onChange={(e)=>setUseCase(e.target.value)} />
 
         <button
