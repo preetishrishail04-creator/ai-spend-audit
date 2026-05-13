@@ -24,6 +24,10 @@ export default function AuditPage() {
   }, []);
 
   const saveData = () => {
+    if (!tool || !plan || !spend) {
+  alert("Please fill Tool, Plan, and Monthly Spend");
+  return;
+}
     localStorage.setItem(
       "auditForm",
       JSON.stringify({ tool, plan, spend, seats, teamSize, useCase })
