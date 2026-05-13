@@ -19,6 +19,10 @@ export default function ResultsPage() {
     <main className="min-h-screen bg-black text-white flex flex-col items-center justify-center">
       <h1 className="text-5xl font-bold mb-6">Your Audit Result</h1>
 
+      <p className="text-gray-400 mb-6">
+      Here’s how much you could save on your AI tools.
+     </p>
+
       <p className="text-2xl mb-4">
         Tool: {tool}
       </p>
@@ -37,6 +41,13 @@ export default function ResultsPage() {
 >
        Edit Audit
       </button>
+       <button
+       onClick={() => window.location.href = "/"}
+        className="mt-4 bg-gray-700 text-white px-6 py-3 rounded"
+>
+        Home
+        </button>
+
     </main>
   );
 }

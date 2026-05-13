@@ -101,6 +101,13 @@ export default function AuditPage() {
         >
           Generate Audit
         </button>
+
+        <button
+        onClick={() => window.location.href = "/"}
+       className="ml-4 bg-gray-700 text-white px-6 py-3 rounded"
+>
+       Back
+      </button>
       </div>
     </main>
   );
