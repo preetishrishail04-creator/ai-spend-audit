@@ -26,6 +26,17 @@ export default function ResultsPage() {
       <p className="text-xl text-gray-300">
         Estimated Savings: ${savings}/month (${savings * 12}/year)
       </p>
+
+      <p className="text-green-400 mt-4">
+        Recommendation: Consider switching to a lower-cost plan.
+      </p>
+
+      <button
+       onClick={() => window.location.href = "/audit"}
+       className="mt-6 bg-white text-black px-6 py-3 rounded"
+>
+       Edit Audit
+      </button>
     </main>
   );
 }
