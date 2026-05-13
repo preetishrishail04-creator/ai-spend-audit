@@ -41,7 +41,7 @@ export default function AuditPage() {
 
       <div className="space-y-4 max-w-md">
         <select
-  className="w-full p-3 rounded text-black"
+  className="w-full p-3 rounded big-white text-black"
   value={tool}
   onChange={(e) => setTool(e.target.value)}
 >
@@ -52,7 +52,7 @@ export default function AuditPage() {
   <option value="GitHub Copilot">GitHub Copilot</option>
 </select>
         <select
-  className="w-full p-3 rounded text-black"
+  className="w-full p-3 rounded big-white text-black"
   value={plan}
   onChange={(e) => setPlan(e.target.value)}
 >
@@ -83,7 +83,17 @@ export default function AuditPage() {
   value={teamSize}
   onChange={(e)=>setTeamSize(e.target.value)}
 />
-        <input className="w-full p-3 rounded big-white text-black caret-black" placeholder="Use Case" value={useCase} onChange={(e)=>setUseCase(e.target.value)} />
+       <select
+  className="w-full p-3 rounded big-white text-black"
+  value={useCase}
+  onChange={(e) => setUseCase(e.target.value)}
+>
+  <option value="">Select Use Case</option>
+  <option value="Coding">Coding</option>
+  <option value="Writing">Writing</option>
+  <option value="Research">Research</option>
+  <option value="Mixed">Mixed</option>
+</select>
 
         <button
           onClick={saveData}
